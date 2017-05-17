@@ -5,17 +5,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
-    <title>Carousel Template for Bootstrap</title>
 
-    <!-- Bootstrap core CSS -->
+    <title>Infoeste 2017 - SPA</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+
+    <!-- Estilos -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
 
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,900" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -26,95 +26,226 @@
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
   </head>
+<!-- NAVBAR
+http://colorhunt.com/
+https://color.adobe.com/
+http://zurb.com/patterntap
+================================================== -->
   <body>
+ <div class="navbar-wrapper">
+      <div class="container">
+        <nav class="navbar navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
 
- <section class ="page">
-              <div class="container">
+              <a class="navbar-brand" href="#">Cervejaria Nacional</a>
+            </div>
+
+            <div id="navbar" class="navbar-collapse collapse pull-right">
+              <ul class="nav navbar-nav">
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#servejaria">A Cervejaria</a></li>
+                <li><a href="#contato">Contato</a></li>
+                    
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+      </ol>
+
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="assets/img/bgEventos.png" alt="First slide">
+        </div>
+
+        <div class="item">
+          <img class="second-slide" src="assets/img/banner-02.png" alt="Second slide">
+        </div>
+      </div>
+
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+      </a>
+    </div>
+    <section class="page product">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="page-heading">Cervejas</h2>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-md-3">
+            <div class="text-center">
+              <a href="" class="product-item">
+
+                <img src="assets/img/mula.png" alt="" class="img-responsive img-circle img-responsive-center">
+
+                <div class="product-hover"><span>Cerveja Mula</span></div>
+
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="text-center">
+              <a href="" class="product-item">
+                <img src="assets/img/sasi.png" alt="" class="img-responsive img-circle img-responsive-center">
+
+                <div class="product-hover"><span>Cerveja Sa'si</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="text-center">
+              <a href="" class="product-item">
+                <img src="assets/img/domina.png" alt="" class="img-responsive img-circle img-responsive-center">
+
+                <div class="product-hover"><span>Cerveja Domina</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="text-center">
+              <a href="" class="product-item">
+                <img src="assets/img/kurupira.png" alt="" class="img-responsive img-circle img-responsive-center">
+
+                <div class="product-hover"><span>Cerveja kurupira</span></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="page featurette">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <h2 class="page-heading">A Cervejaria</h2>
+
+            <p>Somos a resistência às crises econômicas e acreditamos que um produto de qualidade deve ser acessível à todos os públicos sem distinção de classe social, cultura, gênero e cor;</p>
+               
+            <p>Somos os sonhadores, os apreciadores da boa cerveja que viram na panela de brassagem uma oportunidade de negócio e ao mesmo tempo o prazer em produzir e difundir a própria marca em meio tantas dificuldades;</p>
+               
+            <p>Somos a persistência, a irreverência e alegria do povo brasileiro que trabalha por uma vida melhor mesmo nos momentos mais difíceis;</p>
+               
+            <p>Bebemos e sempre beberemos por prazer visando sempre estar perto de quem gostamos, celebrando a vida e seus bons momentos, confraternizando a cada happy hour,  feriados, folgas  e descanso, pois não importa o dia ou hora, devemos quebrar a rotina e valorizar o que é importante em nossa vida;</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="page contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="page-heading">Fale conosco</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-7">
+            <form method="post" role="form">
+              <fieldset>
+                <legend class="sr-only"></legend>
+                
                 <div class="row">
-                  <div class="col-md-12">
-                    <h2 class ="page-heading">Produtos</h2>
+                  <div class="form-group col-md-6">
+                    <label for="name" class="sr-only">Nome</label>
+                    <input class="form-control" type="text" name="name" id="name" aria-required="true" placeholder="Nome" required>
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="name" class="sr-only">Sobrenome</label>
+                    <input class="form-control" type="text" name="name" id="name" aria-required="true" placeholder="Sobrenome" required>
                   </div>
                 </div>
 
-                <div class="row">
-                  <div class="col-md-3">
-                    <div class="text-center">
-                      <a href="" class="product-ítem">
-                        <img src="assets/img/mula.png" alt="" class="img-responsive">
-                          <div class="product-hover"><span>Cerveja Mular</span></div>
-                        </a>
-                     </div>
-                    </div>
-                   
-                    <div class="col-md-3">
-                    <div class="text-center">
-                      <a href="" class="product-ítem">
-                        <img src="assets/img/kurupira.png" alt="" class="img-responsive">
-                          <div class="product-hover"><span>Cerveja Kurupira</span></div>
-                        </a>
-                      </div>
-                      
-                    </div>
-                    <div class="col-md-3">
-                    <div class="text-center">
-                      <a href="" class="product-ítem">
-                        <img src="assets/img/domina.png" alt="" class="img-responsive">
-                          <div class="product-hover"><span>Cerveja Domina</span></div>
-                        </a>
-                       </div>
-                      
-                    </div>
-                    <div class="col-md-3">
-                    <div class="text-center">
-                      <a href="" class="product-ítem">
-                        <img src="assets/img/sasi.png" alt="" class="img-responsive">
-                          <div class="product-hover"><span>Cerveja Sasi</span></div>
-                        </a>
-                       </div>
-                      
-                    </div>
-                  </div>
-
-                   <div class="row">
-                  <div class="col-md-7">
-                    <h2 class="page-heading"> Fale Conosco </h2>
-                      <form method="post" role="form">
-                        <fieldset>
-                          <legend class="sr-only"></legend>
-                              <div class="row">
-                                <div class="form-group col-md-6">
-                                 <label for="name" class="sr-only">Nome</label>
-                                 <input class="form-control" type="text" name="name" id="name" ari-requered="true" placeholder="Nome" required>
-                                </div>
-                                <div class="form-group col-md-6">
-                                  <label for="name" class="sr-only">Sobrenome</label>
-                                  <input class="form-control" type="text" name="name" id="name" ari-requered="true" placeholder="Sobrenome" required>
-                                </div>
-                                <div class="form-group col-md-12">
-                                  <label for="name" class="sr-only">Email</label>
-                                  <input class="form-control" type="text" name="name" id="name" ari-requered="true" placeholder="Email" required>
-                                </div>
-                                <div class="form-group col-md-12">
-                                  <label for="name" class="sr-only">Mensagem</label>
-                                  <textarea rows="10" class="form-control" placeholder="Mensagem"></textarea> 
-                                </div>
-
-
-                        </fieldset>
-                        <input type="submit" name="">
-                      </form>
-                     
-                     </div>
-                    </div>
-
+                <div class="form-group">
+                  <label for="email" class="sr-only">E-mail</label>
+                  <input class="form-control" type="email" name="email" id="email" ariaa-invalid="true" ari-required="true" placeholder="E-mail" required>
                 </div>
-               </section>
 
-            </section>
+                <div class="form-group">
+                  <label for="message" class="sr-only">Mensagem</label>
+                  <textarea class="form-control" name="message" id="message cols="30" rows="10" placeholder="Mensagem"></textarea>
+                </div>
 
+                <div class="form-group">
+                  <button type="submit" class="btn">Enviar <span class="glyphicon glyphicon-send" aria-hidden="true"></span></button>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+
+          <div class="col-md-4 col-md-offset-1">
+            <address class="address">
+              <div class="address-group">
+                <h4 class="address-heading"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>Endereço</h4>
+
+                <div class="address-item">
+                  <span>Av. Pedroso de Morais, 604 - Pinheiros, São Paulo - SP, 05420-001</span>
+                </div>
+              </div>    
+
+              <div class="address-group">
+                <h4 class="address-heading phone"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>Telefone</h4>
+                
+                <div class="address-item">
+                  <span>18 99772.3448</span>
+                  <span>18 99772.3448</span>
+                </div>
+              </div>
+
+              <div class="address-group">            
+                <h4 class="address-heading mail"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>E-mail</h4>
+                
+                <div class="address-item">
+                  <span>contato@cervejarianacional.com.br</span>
+                </div>
+              </div>  
+
+              <div class="address-group"> 
+                <span>Segunda a Sábado das 12h00 às 00h00 e Domingos das 12h00 às 22h00. <br> Faça sua reserva pelo e-mail ou pelo telefone</span>
+              </div>    
+            </address>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-bar">
+        <div class="text-center">
+          <span>Beba com moderação. Venda e consumo proibidos para menores de 18 anos. Se for dirigir não beba.</span>
+        </div>
+      </div>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="assets/js/bootstrap.min.js"></script>
   </body>
 </html>
+
+
